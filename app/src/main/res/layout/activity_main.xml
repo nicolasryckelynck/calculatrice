@@ -4,23 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/screen"
-        android:layout_width="417dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="300dp"
+        android:layout_width="389dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="280dp"
         android:gravity="end"
         android:lineSpacingExtra="8sp"
         android:text="0"
-        android:textAlignment="center"
+        android:textAlignment="textEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#E91E63"
+        android:textColor="#FF5722"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,8 +29,8 @@
         android:layout_width="409dp"
         android:layout_height="190dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -38,21 +39,21 @@
             <Button
                 android:id="@+id/btn7"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="7" />
 
             <Button
                 android:id="@+id/btn8"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="8" />
 
             <Button
                 android:id="@+id/btn9"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="9" />
 
@@ -60,12 +61,14 @@
                 android:id="@+id/btnPlus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#9C27B0"
+                android:backgroundTint="#ABA5AC"
                 android:onClick="setOperator"
                 android:text="+"
                 android:textColorHighlight="#B62626"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 android:visibility="visible"
-                app:iconTint="#E91E63" />
+                app:iconTint="#C1C0C0" />
 
         </TableRow>
 
@@ -76,21 +79,21 @@
             <Button
                 android:id="@+id/btn4"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="4" />
 
             <Button
                 android:id="@+id/btn5"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="5" />
 
             <Button
                 android:id="@+id/btn6"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="6" />
 
@@ -98,9 +101,11 @@
                 android:id="@+id/btnMoins"
                 android:layout_width="139dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#9C27B0"
+                android:backgroundTint="#ABA5AC"
                 android:onClick="setOperator"
-                android:text="-" />
+                android:text="-"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -109,21 +114,21 @@
             <Button
                 android:id="@+id/btn1"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="1" />
 
             <Button
                 android:id="@+id/btn2"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="2" />
 
             <Button
                 android:id="@+id/btn3"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="3" />
 
@@ -131,9 +136,11 @@
                 android:id="@+id/btnFois"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#9C27B0"
+                android:backgroundTint="#ABA5AC"
                 android:onClick="setOperator"
-                android:text="*" />
+                android:text="*"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -143,14 +150,14 @@
                 android:id="@+id/btnClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#673AB7"
+                android:backgroundTint="#FF5722"
                 android:onClick="clear"
                 android:text="C" />
 
             <Button
                 android:id="@+id/btn0"
                 style="@style/DigitBtnStyle"
-                android:backgroundTint="#E91E63"
+                android:backgroundTint="#3E3C3D"
                 android:onClick="addNumber"
                 android:text="0" />
 
@@ -158,17 +165,21 @@
                 android:id="@+id/btnEgal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#9C27B0"
+                android:backgroundTint="#ABA5AC"
                 android:onClick="compute"
-                android:text="=" />
+                android:text="="
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnDiv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#9C27B0"
+                android:backgroundTint="#ABA5AC"
                 android:onClick="setOperator"
-                android:text="/" />
+                android:text="/"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -179,8 +190,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculatrice"
-        android:textColor="#E91E63"
-        android:textSize="48sp"
+        android:textColor="#FF5722"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
